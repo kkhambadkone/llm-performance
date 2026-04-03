@@ -1,4 +1,40 @@
 
+# Understanding LLM Performance Metrics and Locust Outputs
+
+## 1. Introduction
+
+Evaluating large language model (LLM) performance requires more than just measuring speed. You need to understand responsiveness, throughput, and consistency. This document explains key LLM performance metrics and how they relate to metrics provided by Locust, a popular load testing tool.
+
+---
+
+## 2. Core LLM Performance Metrics
+
+### Time to First Token (TTFT)
+**Definition:** Time from sending a request to receiving the first generated token.
+
+- Measures initial responsiveness
+- Includes queueing, preprocessing, and first inference step
+- Critical for user-perceived latency in streaming applications
+
+---
+
+### Latency (LAT)
+**Definition:** Total time from request start to full response completion.
+
+- Also called end-to-end latency
+- Includes network, queuing, and generation time
+
+Variants:
+- Full latency (entire response)
+- Per-token latency (time between tokens)
+
+---
+
+### Tokens Per Second (TPS)
+**Definition:** Token generation rate after the first token.
+
+TPS = total tokens / generation time (excluding TTFT)
+
 - Measures throughput
 - Higher TPS = faster streaming output
 

@@ -161,44 +161,7 @@ Open the UI at http://localhost:8089, you should see this.
 
 ---
 
-## 6. Extending Locust for LLM Metrics
-
-### Measuring TTFT
-- Use streaming APIs (SSE/WebSockets)
-- Record:
-  - Request start time
-  - First token arrival time
-
----
-
-### Measuring TPS
-- Count tokens in response
-- Measure generation duration
-- Compute TPS manually
-
----
-
-### Recommended Tracking
-- TTFT (p50, p95)
-- Full latency (p50, p95)
-- TPS distribution
-
----
-
-## 7. Summary Table
-
-| Metric   | Description                     | Locust Support |
-|----------|--------------------------------|----------------|
-| TTFT     | Time to first token            | No (custom)    |
-| LAT_avg  | Average full latency           | Yes            |
-| LAT_p50  | Median latency                 | Yes            |
-| LAT_p95  | Tail latency                   | Yes            |
-| TPS      | Token generation speed         | No (custom)    |
-| RPS      | Requests per second            | Yes            |
-
----
-
-## 8. Key Takeaways
+## 6. Key Takeaways
 
 - TTFT determines responsiveness
 - LAT determines total wait time

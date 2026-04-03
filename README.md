@@ -5,6 +5,11 @@
 
 Evaluating large language model (LLM) performance requires more than just measuring speed. You need to understand responsiveness, throughput, and consistency. This document explains key LLM performance metrics and how they relate to metrics provided by Locust, a popular load testing tool.
 
+In this repo, these metrics will be showcased using two applications:
+
+1. benchmarkllm.py - A custom script that will measure key metrics like TTFT, LAT and TPS
+2. locustfile.py - A script that will run locust which is a popular tool to measure system level llm metrics
+
 ---
 
 ## 2. Core LLM Performance Metrics

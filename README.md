@@ -79,6 +79,7 @@ Example:
 
 In order to run the script benchmarkllm.py, you have to make sure that the two LLMs llama3 and mistral are installed and the ollama server is running.
 
+```
 $ ollama list
 NAME              ID              SIZE      MODIFIED   
 llama3:latest     365c0bd3c000    4.7 GB    2 days ago    
@@ -88,6 +89,7 @@ llama4:latest     bf31604e25c2    67 GB     6 days ago
 $ nohup ollama server > ollamaout.txt 2>&1 &
 
 $ python benchmarkllm.py
+```
 
 This will generate a file called benchmark_results.csv with the following metrics as explained above.
 

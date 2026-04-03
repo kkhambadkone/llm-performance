@@ -102,6 +102,20 @@ This will generate a file called benchmark_results.csv with the following metric
 
 Locust operates at the HTTP request level and provides the following:
 
+| Metric | Description |
+|---|---|
+| **# Requests** | Total requests made |
+| **# Failures** | Total failed requests |
+| **Median (ms)** | 50th percentile response time |
+| **90%ile (ms)** | 90th percentile response time |
+| **99%ile (ms)** | 99th percentile response time |
+| **Average (ms)** | Mean response time |
+| **Min (ms)** | Fastest request |
+| **Max (ms)** | Slowest request |
+| **Average size (bytes)** | Average response body size |
+| **Current RPS** | Requests per second right now |
+| **Current Failures/s** | Failures per second right now |
+
 ### Request Metrics
 - Total requests
 - Failures
@@ -126,6 +140,24 @@ Locust operates at the HTTP request level and provides the following:
 ### Reliability Metrics
 - Failure count
 - Error rate
+
+---
+
+Create a virtual environment and install locust
+
+```
+python -m venv llmlocust-env
+source llmlocust-env/bin/activate
+
+pip install locust
+
+locust -f locustfile.py --host http://localhost:11434
+```
+http://localhost:8089
+
+<div align="left">
+  <img src="images/locustdashboard.png" width="1000" height="300" />
+</div>
 
 ---
 

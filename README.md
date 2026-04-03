@@ -91,8 +91,8 @@ $ python benchmarkllm.py
 
 This will generate a file called benchmark_results.csv with the following metrics as explained above.
 
-<div align="center">
-  <img src="images/perfresults.png" width="700" height="200" />
+<div align="left">
+  <img src="images/perfresults.png" width="1000" height="300" />
 </div>
  
 

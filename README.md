@@ -116,32 +116,9 @@ Locust operates at the HTTP request level and provides the following:
 | **Current RPS** | Requests per second right now |
 | **Current Failures/s** | Failures per second right now |
 
-### Request Metrics
-- Total requests
-- Failures
-- Requests per second (RPS)
-
 ---
 
-### Response Time Metrics
-- Average response time → LAT_avg
-- Median response time → LAT_p50
-- Percentiles (p90, p95, p99) → LAT_p95, etc.
-- Min / Max response time
-
----
-
-### Distribution Metrics
-- Response time histogram
-- Helps visualize latency spread
-
----
-
-### Reliability Metrics
-- Failure count
-- Error rate
-
----
+### Running locust
 
 Create a virtual environment and install locust
 
@@ -153,7 +130,8 @@ pip install locust
 
 locust -f locustfile.py --host http://localhost:11434
 ```
-http://localhost:8089
+
+Open the UI at http://localhost:8089, you should see this.
 
 <div align="left">
   <img src="images/locustdashboard.png" width="1000" height="300" />
